@@ -36,5 +36,5 @@ ENTRYPOINT ["/entrypoint.sh"]
 # =============================================================================
 # License: MIT License
 # See LICENSE file in the repository root for full license text.
-# GitHub: https://github.com/fhimanparas20/itcyou-docker
+# GitHub: https://github.com/dhimanparas20/itcyou-docker
 # =============================================================================

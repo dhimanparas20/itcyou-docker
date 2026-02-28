@@ -3,7 +3,7 @@
 [![Docker Hub](https://img.shields.io/badge/Docker%20Hub-dhimanparas20%2Fitcyou-blue?logo=docker)](https://hub.docker.com/r/dhimanparas20/itcyou)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Alpine](https://img.shields.io/badge/alpine-3.21-0D597F?logo=alpine-linux)](https://alpinelinux.org/)
-[![GitHub](https://img.shields.io/badge/GitHub-fhimanparas20-black?logo=github)](https://github.com/fhimanparas20)
+[![GitHub](https://img.shields.io/badge/GitHub-dhimanparas20-black?logo=github)](https://github.com/dhimanparas20)
 
 > **⚡ The fastest way to expose your localhost to the internet**
 
@@ -213,7 +213,7 @@ docker run -d --rm --network host \
 ### Build Steps
 ```bash
 # Clone the repository
-git clone https://github.com/fhimanparas20/itcyou-docker.git
+git clone https://github.com/dhimanparas20/itcyou-docker.git
 cd itcyou-docker
 
 # Build the Docker image
@@ -355,7 +355,7 @@ docker compose up -d --scale itcyou=3
 
 - 🌐 **Official Website**: [https://it.cyou/](https://it.cyou/)
 - 📦 **Docker Hub**: [https://hub.docker.com/r/dhimanparas20/itcyou](https://hub.docker.com/r/dhimanparas20/itcyou)
-- 💻 **GitHub Repo**: [https://github.com/fhimanparas20/itcyou-docker](https://github.com/fhimanparas20/itcyou-docker)
+- 💻 **GitHub Repo**: [https://github.com/dhimanparas20/itcyou-docker](https://github.com/dhimanparas20/itcyou-docker)
 - 🐦 **Twitter/X**: Follow [@itcyou](https://twitter.com/itcyou) for updates
 
 ---
@@ -380,7 +380,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Built with ❤️ by [fhimanparas20](https://github.com/fhimanparas20)
+- Built with ❤️ by [dhimanparas20](https://github.com/dhimanparas20)
 - Powered by [it.cyou](https://it.cyou/) tunneling service
 - Alpine Linux base image for minimal footprint
 
@@ -390,6 +390,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ Star this repo if you find it useful! ⭐**
 
-Made with 🔥 by [Paras Dhiman](https://github.com/fhimanparas20)
+Made with 🔥 by [Paras Dhiman](https://github.com/dhimanparas20)
 
 </div>
