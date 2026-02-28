@@ -1,0 +1,14 @@
+services:
+  itcyou:
+    build: .
+    image: dhimanparas20/itcyou:latest
+    container_name: itcyou-tunnel
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      ITCYOU_PORT: "5050"                      # port of your local service
+      ITCYOU_SUBDOMAIN: "myapp"                # → https://myapp.it.cyou
+      # ITCYOU_TOKEN: "itc_yourapikey"         # uncomment & set your API key
+      # ITCYOU_HOST: "it.cyou"                 # custom server host
+      # ITCYOU_SERVER_PORT: "4443"             # custom server port
+      # ITCYOU_INSECURE: "true"                # dev only — skip TLS verify
