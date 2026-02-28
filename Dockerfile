@@ -31,6 +31,10 @@ ENV ITCYOU_HOST=""
 ENV ITCYOU_SERVER_PORT=""
 ENV ITCYOU_INSECURE=""
 
+# Health check - verify tunnel process is running
+HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
+  CMD pgrep -x "itcyou" > /dev/null || exit 1
+
 ENTRYPOINT ["/entrypoint.sh"]
 
 # =============================================================================
