@@ -32,3 +32,9 @@ ENV ITCYOU_SERVER_PORT=""
 ENV ITCYOU_INSECURE=""
 
 ENTRYPOINT ["/entrypoint.sh"]
+
+# =============================================================================
+# License: MIT License
+# See LICENSE file in the repository root for full license text.
+# GitHub: https://github.com/fhimanparas20/itcyou-docker
+# =============================================================================
