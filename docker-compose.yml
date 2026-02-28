@@ -6,7 +6,7 @@ services:
     restart: unless-stopped
     network_mode: host
     environment:
-      ITCYOU_PORT: "5050"                      # port of your local service
+      ITCYOU_PORT: "3000"                      # port of your local service
       ITCYOU_SUBDOMAIN: "myapp"                # → https://myapp.it.cyou
       # ITCYOU_TOKEN: "itc_yourapikey"         # uncomment & set your API key
       # ITCYOU_HOST: "it.cyou"                 # custom server host
