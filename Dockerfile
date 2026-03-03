@@ -25,6 +25,7 @@ RUN chmod +x /entrypoint.sh
 
 # Configurable via env vars
 ENV ITCYOU_PORT=3000
+ENV ITCYOU_TARGET_HOST=localhost
 ENV ITCYOU_SUBDOMAIN=""
 ENV ITCYOU_TOKEN=""
 ENV ITCYOU_HOST=""
