@@ -6,13 +6,8 @@ echo "  🌐 itcyou tunnel client"
 echo "  📡 https://it.cyou/"
 echo "============================================"
 
-# --- Determine target host ---
-# For Windows/macOS: set ITCYOU_TARGET_HOST=host.docker.internal
-# For Linux: default is localhost (or keep empty for default behavior)
-TARGET_HOST="${ITCYOU_TARGET_HOST:-localhost}"
-
 # --- Build the command from env vars ---
-CMD="itcyou ${TARGET_HOST}:${ITCYOU_PORT}"
+CMD="itcyou ${ITCYOU_PORT}"
 
 # Subdomain: -s myapp → https://myapp.it.cyou
 if [ -n "$ITCYOU_SUBDOMAIN" ]; then
@@ -45,7 +40,7 @@ fi
 echo ""
 echo "🚀 Starting tunnel..."
 echo "   Command:  itcyou ${ITCYOU_PORT} [flags]"
-echo "   Target:   ${TARGET_HOST}:${ITCYOU_PORT}"
+echo "   Target:   localhost:${ITCYOU_PORT}"
 if [ -n "$ITCYOU_SUBDOMAIN" ]; then
   echo "   URL:      https://${ITCYOU_SUBDOMAIN}.it.cyou"
 else

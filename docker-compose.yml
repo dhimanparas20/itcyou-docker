@@ -4,31 +4,14 @@ services:
     image: dhimanparas20/itcyou:latest
     container_name: itcyou-tunnel
     restart: unless-stopped
-    # -----------------------------------------
-    # Linux: Use network_mode: host
-    # Windows: Remove network_mode and use port mapping (see extra_hosts below)
-    # -----------------------------------------
     network_mode: host
     environment:
       ITCYOU_PORT: "3000"                      # port of your local service
       ITCYOU_SUBDOMAIN: "myapp"                # → https://myapp.it.cyou
-      # For Windows/macOS: Uncomment and set target host
-      # ITCYOU_TARGET_HOST: "host.docker.internal"
       # ITCYOU_TOKEN: "itc_yourapikey"         # uncomment & set your API key
       # ITCYOU_HOST: "it.cyou"                 # custom server host
       # ITCYOU_SERVER_PORT: "4443"             # custom server port
       # ITCYOU_INSECURE: "true"                # dev only — skip TLS verify
-    # -----------------------------------------
-    # Windows Option 2: Enable host networking in Docker Desktop
-    # 1. Open Docker Desktop → Settings → Features in development
-    # 2. Enable "Use the new Virtualization framework" (Windows 11)
-    # 3. Enable "Enable host networking" (Experimental)
-    # 4. Apply & Restart
-    # Then you can use network_mode: host on Windows too!
-    # -----------------------------------------
-    # For Windows without host networking, use extra_hosts:
-    # extra_hosts:
-    #   - "host.docker.internal:host-gateway"
     healthcheck:
       test: ["CMD-SHELL", "pgrep -x 'itcyou' > /dev/null || exit 1"]
       interval: 30s
