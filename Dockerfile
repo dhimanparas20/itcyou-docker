@@ -1,9 +1,13 @@
 # =========== Build Stage ===========
-FROM alpine:3.21 AS builder
+FROM --platform=$BUILDPLATFORM alpine:3.21 AS builder
+
+ARG TARGETARCH
+ARG TARGETOS
 
 RUN apk add --no-cache curl bash
 
 # Install itcyou via official installer
+# Note: This script runs in the build context and should auto-detect architecture
 RUN curl -fsSL https://it.cyou/install.sh | sh
 
 # Debug: find where binary landed (remove after first successful build)
